@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    background: black;
+    margin-right: -4px;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+
+span {
+    float: right;
+}
+
+a:hover {
+    background:blue;
+}
+
+.drop {
+    display: none;
+    position: absolute;
+    width: 235px;
+}
+
+.drop .drop {
+    left: 100%;
+    bottom:-100%;
+}
+
+.drop li {
+    display: block;
+    position: relative;
+}
+
+.menu li:hover >.drop{
+    display: block;
+}
+
